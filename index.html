@@ -12,7 +12,17 @@
         <h2> Big players in the AV field </h2>
         <p>Some of the companies in the field are</p>
         <table>
-            <thead>
+          <caption>Autonomous Car Companies</caption>
+          <!-- <col span="5" style="background-color:rgb(75, 5, 236)"> -->
+          <colgroup>
+            <col span="1" style="background-color:rgb(88, 170, 11)">
+            <col span="1" style="background-color:rgba(30, 10, 207, 0.801)">
+            <col span="1" style="background-color:rgb(204, 47, 47)">
+            <col span="1" style="background-color:rgb(223, 138, 10)">
+            <col span="5" style="background-color:rgba(0, 0, 0, 0.76)">
+        </colgroup>
+        
+        <thead>
               <tr>
                 <th>NVIDIA</th>
                 <th>Mobileye</th>
@@ -32,15 +42,85 @@
             </tbody>
           </table>
 
-        <p>Many people believe that <b>Tesla</b> is leading this autonomous race mainly thanks to the amount of data it collects.
-        No other car company has so much information and <em>real world</em> data  </p>
-    
+        <p>
+          Many people believe that <b>Tesla</b> is leading this autonomous race mainly thanks to the amount of data it collects.
+        No other car company has so much information and <em>real world</em> data  
+      </p>
     
         
+        <p>Out of the above four, which one would you prefer?</p>
+
+        <form>
+          <input type="radio" id="nvidia" name="manufacture" value="n">
+          <label for="n">NVIDIA</label><br>
+
+          <input type="radio" id="mobileye" name="manufacture" value="m">
+          <label for="m">Mobileye</label><br>
+
+          <input type="radio" id="tesla" name="manufacture" value="t">
+          <label for="t">Tesla</label><br>
+
+          <input type="radio" id="waymo" name="manufacture" value="w">
+          <label for="w">Waymo</label>
+        </form> 
+
+        <details>
+          <summary>Sneak peek here</summary>
+          I cheated a little. As of now, Waymo and ArgoAI are planned to be Robotaxi services, and not for individual usage.
+      </details><br>
+
+      <!-- <details> 
+        <summary> Which sensor every autonomous car company uses except Tesla? </summary>
+          A LiDAR. Musk believes that it's too expensive to be used in commercial cars
+      </details>
+       -->
+       <button type="menu" menu="popup-menu">
+        Tap if you like AV
+      </button><br>
+      
+
+      <label>Choose a company:</label>
+        <select id="dino-select">
+            <optgroup label="Company">
+                <option>NVIDIA</option>
+                <option>Mobileye</option>
+                <option>Tesla</option>
+                <option>ArgoAI</option>
+                <option>Waymo</option>
+            </optgroup>
+        </select>
+
+        <form>
+          <fieldset>
+            <legend>Companies who use LiDAR</legend>
+            <label>NVIDIA</label><br/>
+            <label>Mobileye</label><br/>
+            <label>ArgoAI</label><br>
+            <label>Waymo</label>
+          </fieldset>
+        </form>
+        
+    <hr />
+      <h3>Random stuff</h3>
+    <p>I'm running out of ideas on how to make it AV related and satisfy all the requirements. So below are just random stuff, 
+      less in the flow of what I tried doing above </p>
+      
+      <p>What do you want on your piazza?</p>
+      <div>
+        <label for="cheese">Cheese</label>
+        <input type="checkbox"> 
+
+        <label for="tometo">tometo</label>
+        <input type="checkbox"> 
+
+        <label for="cheese">olives</label>
+        <input type="checkbox">
+    </div>
     
-    
-    
-    
+    <head>
+      <h3>Input section</h3>
+
+    </head>
     
     </body>
 
