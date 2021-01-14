@@ -120,8 +120,44 @@
     <head>
       <h3>Input section</h3>
 
+      <label>Favorite UCSD course (ABC123):     </label>
+      <input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10">
+
+       
+      <div>
+        <label>Choose your favorite colors:   </label>
+          <input type="color" id="head" name="head"
+                value="#e66465">
+      </div>
+
+
+      <label>DOB:</label>
+      <input type="date" id="start" name="trip-start"
+            value="2000-01-01"
+            min="1900-01-01" max="2005-12-31">
+
+      <div>
+        <label>How impressed are you with this amazing website? (jk)</label><br>
+        <input type="range" id="volume" name="volume"
+                min="0" max="9">
+        <label for="volume">Hotness</label>
+      </div>
+
+      <label for="url">Enter <b>your</b> website URL (https://...):</label>
+      <input type="url" name="url" id="url"
+            placeholder="https://www.YourAmazingSite.com"
+            pattern="https://.*" size="50"
+            required>
+
     </head>
     
+
+    <br><input type="submit" value="Save information"><br>
+    
+    <input type="image" id="image" alt="Login"
+       src="/images/red.png">
+
     </body>
 
 </html>
