@@ -140,23 +140,62 @@
       <div>
         <label>How impressed are you with this amazing website? (jk)</label><br>
         <input type="range" id="volume" name="volume"
-                min="0" max="9">
+                min="0" max="10">
         <label for="volume">Hotness</label>
       </div>
+
+      <label for="tentacles">(in number of 1-10):</label>
+      <input type="number" id="tentacles" name="tentacles"
+            min="0" max="10"><br>
 
       <label for="url">Enter <b>your</b> website URL (https://...):</label>
       <input type="url" name="url" id="url"
             placeholder="https://www.YourAmazingSite.com"
             pattern="https://.*" size="50"
-            required>
+            required><br>
 
+      
+      <label for="avatar">Choose a profile picture:</label>
+          <input type="file"
+              id="avatar" name="avatar"
+              accept="image/png, image/jpeg"><br>
+
+    <label for="email">Enter your email address:</label>
+      <input type="email" id="email"
+              size="30" required>
+
+    <input 
+    type="button"
+    value="A button">
     </head>
-    
-
     <br><input type="submit" value="Save information"><br>
-    
-    <input type="image" id="image" alt="Login"
-       src="/images/red.png">
+
+    <hr>
+      <textarea id="freeSpeech" name="story"
+                rows="5" cols="50">
+      Feel free to express yourself here...
+      </textarea><br>
+
+
+        <label for="someMajor">What's your major:</label>
+        <input list="majors" />
+        
+        <datalist id="majors">
+            <option value="CS">
+            <option value="CE">
+            <option value="Math">
+            <option value="EE">
+            <option value="Else">
+        </datalist><br>
+        
+        <label for="pet-select">Choose a pet:</label>
+        <select name="pets" id="pet-select">
+            <option value="">--Please choose an option--</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+
+
+
 
     </body>
 
