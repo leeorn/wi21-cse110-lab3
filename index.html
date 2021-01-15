@@ -2,11 +2,14 @@
     <head>
         <title>Lab 2</title>
     </head>
+    <meta name="author" content="Leeor">
 
     <body>
         <h1>Intro</h1>
-        <p>Welcome. <br> This website is part of CSE 110 lab 2 - learn HTML. </p>
-        <p>On this site, I'd give a (very!) brief intro to autonomous vehicles, while demonstrating HTML usage.</p>
+        <main role="main"> 
+          <p>Welcome. <br> This website is part of CSE 110 lab 2 - learn HTML. <a href="https://canvas.ucsd.edu/courses/21783/assignments/258831"> Link to the assignment </a>   </p>
+          <p>On this site, I'd give a (very!) brief intro to autonomous vehicles, while demonstrating HTML usage.</p>
+        </main>
 
         <hr />
         <h2> Big players in the AV field </h2>
@@ -42,10 +45,10 @@
             </tbody>
           </table>
 
-        <p>
-          Many people believe that <b>Tesla</b> is leading this autonomous race mainly thanks to the amount of data it collects.
-        No other car company has so much information and <em>real world</em> data  
-      </p>
+          <header>
+            Many people believe that <b>Tesla</b> is leading this autonomous race mainly thanks to the amount of data it collects.
+            No other car company has so much information and <em>real world</em> data   
+          </header>
     
         
         <p>Out of the above four, which one would you prefer?</p>
@@ -69,11 +72,7 @@
           I cheated a little. As of now, Waymo and ArgoAI are planned to be Robotaxi services, and not for individual usage.
       </details><br>
 
-      <!-- <details> 
-        <summary> Which sensor every autonomous car company uses except Tesla? </summary>
-          A LiDAR. Musk believes that it's too expensive to be used in commercial cars
-      </details>
-       -->
+
        <button type="menu" menu="popup-menu">
         Tap if you like AV
       </button><br>
@@ -171,10 +170,12 @@
     <br><input type="submit" value="Save information"><br>
 
     <hr>
+    <section>
       <textarea id="freeSpeech" name="story"
                 rows="5" cols="50">
       Feel free to express yourself here...
       </textarea><br>
+    </section>
 
 
         <label for="someMajor">What's your major:</label>
@@ -193,9 +194,7 @@
             <option value="">--Please choose an option--</option>
             <option value="dog">Dog</option>
             <option value="cat">Cat</option>
-
-
-
+            
 
     </body>
 
