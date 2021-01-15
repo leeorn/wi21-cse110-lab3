@@ -15,7 +15,7 @@
         <h2> Big players in the AV field </h2>
         <p>Some of the companies in the field are</p>
         <table>
-          <caption>Autonomous Car Companies</caption>
+          <caption><strong>Autonomous Car Companies</strong></caption>
           <!-- <col span="5" style="background-color:rgb(75, 5, 236)"> -->
           <colgroup>
             <col span="1" style="background-color:rgb(88, 170, 11)">
@@ -36,16 +36,18 @@
             </thead>
             <tbody>
               <tr>
-                <td> <img src="images/nvidia-drive.jpg" width="290px"/> </td>
-                <td> <img src="images/mobileye.jpg" width="230px"/> </td>
-                <td> <img src="images/tesla.png" width="250px"/> </td>
-                <td> <img src="images/argoai.jpg" width="250px"/> </td>
-                <td> <img src="images/waymo.jpg" width="250px"/> </td>
+                <picture>
+                  <td> <img src="images/nvidia-drive.jpg" width="290px"/> </td>
+                  <td> <img src="images/mobileye.jpg" width="230px"/> </td>
+                  <td> <img src="images/tesla.png" width="250px"/> </td>
+                  <td> <img src="images/argoai.jpg" width="250px"/> </td>
+                  <td> <img src="images/waymo.jpg" width="250px"/> </td>
+              </picture>
               </tr>
             </tbody>
           </table>
 
-          <p> Other AV companies:</p>
+          <p> Other AV companies: (and many more)</p>
           <ul>
             <li>Ford</li>
             <li>Nuro</li>
@@ -55,7 +57,7 @@
           </ul>
 
           <figure>
-            <img src="/images/companies.jpeg">
+            <img src="images/companies.jpeg">
             <figcaption>Other companies in the field</figcaption>
         </figure>
 
@@ -170,7 +172,7 @@
             required><br>
 
       
-      <label for="avatar">Choose a profile picture:</label>
+      <label for="avatar">Choose a <i>profile picture</i>:</label>
           <input type="file"
               id="avatar" name="avatar"
               accept="image/png, image/jpeg"><br>
@@ -210,8 +212,14 @@
             <option value="">--Please choose an option--</option>
             <option value="dog">Dog</option>
             <option value="cat">Cat</option>
-            
+        </select>
+        
+        <p>code part: <code>print("Hello World")</code> </p>
+        
+        <pre>From Borat "sup - S U P ?"</pre>
 
+
+    <footer>CSE 110 lab2 - Leeor </footer>
     </body>
 
 </html>
