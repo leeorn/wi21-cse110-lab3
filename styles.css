@@ -46,6 +46,17 @@ h2, h3 {
 	font-family: helvetica; 
 }
 
+/* position requirement */
+h6{
+	position: static;
+	top: 100px;
+}
+code{
+	position: relative;
+	left: 100px;
+}
+
+
 /* 3rd party font */
 @font-face{
 	font-family:Potta;
@@ -130,6 +141,7 @@ header{
 	display: inline-block;
 }
 
+/* set the free text box to have min/max length */
 #freeSpeech{
 	max-width: 50%;
 	min-width: 20%;
