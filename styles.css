@@ -46,6 +46,17 @@ h2, h3 {
 	font-family: helvetica; 
 }
 
+/* position requirement */
+h6{
+	position: static;
+	top: 100px;
+}
+code{
+	position: relative;
+	left: 100px;
+}
+
+
 /* 3rd party font */
 @font-face{
 	font-family:Potta;
@@ -130,7 +141,59 @@ header{
 	display: inline-block;
 }
 
+/* set the free text box to have min/max length */
 #freeSpeech{
 	max-width: 50%;
 	min-width: 20%;
 }
+
+.inbutton:active{
+	color:palevioletred;
+}
+
+.flex-container{
+	margin: 5px;
+	padding: 5px;
+	font-size: 15px;
+	display: flex;
+	flex-wrap: nowrap;	
+}
+
+
+/* .grid-container {
+	display: grid;
+	grid-template-areas:
+	  'header header header'
+	  'left right right';
+	grid-gap: 10px;
+	background-color: #2196F3;
+	padding: 10px;
+  }
+  .grid-container > div {
+	background-color: rgba(163, 11, 11, 0.4);
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+  } */
+
+/* grid req */
+  .grid-container{
+	  display: grid;
+	  grid-template-columns: repeat(2, 1fr);
+	  gap: 15px;
+	  grid-auto-rows: minmax(10px, 20px);
+	  max-width: 10%;
+	  text-align: center;
+  }
+  .item1{
+	  grid-column: 1/-1;
+	  grid-row: 1;
+  }
+  .item2{
+	  grid-row: 2;
+	  grid-column: 1/2;
+  }
+  .item3{
+	  grid-row: 2;
+	  grid-column: 2/2;
+  }
