@@ -150,3 +150,11 @@ header{
 .inbutton:active{
 	color:palevioletred;
 }
+
+.flex-container{
+	margin: 5px;
+	padding: 5px;
+	font-size: 15px;
+	display: flex;
+	flex-wrap: nowrap;	
+}
