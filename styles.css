@@ -18,6 +18,7 @@
 /* Element Selector. changinig the color of the <p> part with "companies"  */
 p.companies{
 	color: yellowgreen;
+	font-size: 120%;		/* relative size */
 }
 
 /* ID Selector. the first sentance "welcoem ..." has a light blue background */
@@ -29,6 +30,7 @@ p.companies{
 a[href*="https://canvas"]{
 	color: blue;
 	font-weight: bold;
+	font-size: 15px;		/* absolute size */
 }
 
 /* Pseudo-class Selectors. make the button "Tap if you like AV" change when hover over it */
@@ -40,7 +42,9 @@ button:active{
 }
 
 /* Selector list. All h2 & h3 titles would have this fond */
-h2, h3 { font-family: helvetica; }
+h2, h3 { 
+	font-family: helvetica; 
+}
 
 /* Descendant Combinator (element element). Change the list of AV companies to circles */
 ul li {
@@ -67,12 +71,14 @@ p ~ div{
 /* Combining Two Selectors (element.class). change "hotness" to black color*/
 label.blackColor{
 	color: #000;
+	font-size: 105%;			/* relative unit */
 }
 
 
 .boartLink{
 	border-style: double;
 	color: rgba(15, 15, 161, 0.459);
-	border-width: 0.02cm;
-	border-radius: 50px 20px;
+	border-width: 0.02cm;		/* absolute unit */
+	border-radius: 50px 20px;	/* absolute unit */
+	font-size: 120%;			/* relative unit */
 }
