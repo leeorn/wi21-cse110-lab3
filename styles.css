@@ -1,0 +1,68 @@
+/* Universal Selector */
+* {
+	background-color:gray;
+}
+
+/* Class Selector */
+.h1Class {
+	color: rgb(5, 37, 5);
+}
+
+/* Class Selector */
+.intro{
+	color:green;
+}
+
+/* Element Selector. changinig the color of the <p> part with "companies"  */
+p.companies{
+	color: yellowgreen;
+}
+
+/* ID Selector. the first sentance "welcoem ..." has a light blue background */
+#firstID {
+	background-color: skyblue;
+  }
+
+/* Attribute Selector. make the link the Canvas (course website) blue and bold */
+a[href*="https://canvas"]{
+	color: blue;
+	font-weight: bold;
+}
+
+/* Pseudo-class Selectors. make the button "Tap if you like AV" change when hover over it */
+button:hover{
+	color: hotpink;
+}
+button:active{
+	color:blue;
+}
+
+/* Selector list. All h2 & h3 titles would have this fond */
+h2, h3 { font-family: helvetica; }
+
+/* Descendant Combinator (element element). Change the list of AV companies to circles */
+ul li {
+	list-style-type: circle;
+  }
+
+/* Child Combinator (element > element). Center & bold the text under the image w/ many companies */
+figure > figcaption{
+	text-align: center;
+	font-weight: bold;
+}
+
+/* General sibling combinator (element + element) */
+hr + h3{
+	background-color: white;
+}
+
+/* Adjacent sibling combinator (element ~ element). Where choosing pizza flavors */
+p ~ div{
+	font-weight: bold;
+	color: yellow;
+}
+
+/* Combining Two Selectors (element.class) */
+label.blackColor{
+	color: black;
+}
