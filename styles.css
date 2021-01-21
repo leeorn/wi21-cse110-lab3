@@ -146,3 +146,7 @@ header{
 	max-width: 50%;
 	min-width: 20%;
 }
+
+.inbutton:active{
+	color:palevioletred;
+}
