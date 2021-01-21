@@ -55,6 +55,8 @@ ul li {
 figure > figcaption{
 	text-align: center;
 	font-weight: bold;
+	color:chocolate;			/* text color */
+	text-decoration: overline;		/* text-decoration */		
 }
 
 /* General sibling combinator (element + element). make that background white */
@@ -108,5 +110,9 @@ header{
 	height: 200px;
 	width: 50%;
 	background-color: powderblue;
-
 }
+
+/* .rand{
+	
+	;
+} */
