@@ -46,6 +46,15 @@ h2, h3 {
 	font-family: helvetica; 
 }
 
+/* 3rd party font */
+@font-face{
+	font-family:Potta;
+	src: url(PottaOne-Regular.ttf);
+}
+h1{
+	font-family: Potta;
+}
+
 /* Descendant Combinator (element element). Change the list of AV companies to circles */
 ul li {
 	list-style-type: circle;
