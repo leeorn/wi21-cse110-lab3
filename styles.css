@@ -1,11 +1,13 @@
 /* Universal Selector */
 * {
-	background-color:gray;
+	/* background-color: rgba(red, green, blue, 0.99); */
+	background-color: gray;
 }
 
 /* Class Selector */
 .h1Class {
 	color: rgb(5, 37, 5);
+	/* color: rgba(red, green, blue, alpha) */
 }
 
 /* Class Selector */
@@ -20,7 +22,7 @@ p.companies{
 
 /* ID Selector. the first sentance "welcoem ..." has a light blue background */
 #firstID {
-	background-color: skyblue;
+	background-color: rgba(0, 255, 0, 0.3);
   }
 
 /* Attribute Selector. make the link the Canvas (course website) blue and bold */
@@ -31,7 +33,7 @@ a[href*="https://canvas"]{
 
 /* Pseudo-class Selectors. make the button "Tap if you like AV" change when hover over it */
 button:hover{
-	color: hotpink;
+	color:hsla(302, 77%, 40%, 0.7)
 }
 button:active{
 	color:blue;
@@ -53,16 +55,16 @@ figure > figcaption{
 
 /* General sibling combinator (element + element) */
 hr + h3{
-	background-color: white;
+	background-color: #ffffff;
 }
 
 /* Adjacent sibling combinator (element ~ element). Where choosing pizza flavors */
 p ~ div{
 	font-weight: bold;
-	color: yellow;
+	color: hsl(57, 86%, 45%);
 }
 
-/* Combining Two Selectors (element.class) */
+/* Combining Two Selectors (element.class). change "hotness" to black color*/
 label.blackColor{
-	color: black;
+	color: #000;
 }
