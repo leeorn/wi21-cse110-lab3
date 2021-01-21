@@ -53,7 +53,7 @@ figure > figcaption{
 	font-weight: bold;
 }
 
-/* General sibling combinator (element + element) */
+/* General sibling combinator (element + element). make that background white */
 hr + h3{
 	background-color: #ffffff;
 }
