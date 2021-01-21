@@ -121,7 +121,11 @@ header{
 	background-color: powderblue;
 }
 
-/* .rand{
-	
-	;
-} */
+/* display */
+.blk{
+	display: inline;
+}
+
+.blk2{
+	display: inline-block;
+}
