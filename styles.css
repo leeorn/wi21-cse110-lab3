@@ -68,3 +68,11 @@ p ~ div{
 label.blackColor{
 	color: #000;
 }
+
+
+.boartLink{
+	border-style: double;
+	color: rgba(15, 15, 161, 0.459);
+	border-width: 0.02cm;
+	border-radius: 50px 20px;
+}
