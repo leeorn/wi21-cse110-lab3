@@ -129,3 +129,8 @@ header{
 .blk2{
 	display: inline-block;
 }
+
+#freeSpeech{
+	max-width: 50%;
+	min-width: 20%;
+}
